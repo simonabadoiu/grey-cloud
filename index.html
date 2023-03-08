@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zaraz "Test" /t Page</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:image/svg+xml,%3csvg%3e %3c/svg%3e" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/cdn-cgi/zaraz/i.js" referrerpolicy="origin"></script>
+  </head>
+
+  <body>
+    <div>
+      <h1>Zaraz Test Page</h1>
+      <ul>
+        <li><a href="/somewhere-else.html">/somewhere-else</a></li>
+        <li><a href="/assets.html">/assets</a></li>
+        <li><a href="/ecommerce.html">/ecommerce</a></li>
+        <li><a href="/embed.html">/embed</a></li>
+        <li><a href="/widget.html">/widget</a></li>
+        <li><a href="/consent.html">/consent</a></li>
+        <li><a href="/a.html">/a</a></li>
+      </ul>
+      <br />
+      <a href="#" onClick="zaraz.showConsentModal()">Show consent modal</a>
+      <script>
+        setTimeout(() => {
+          zaraz.track('verifiedSignup', { name: 'Lady TestALot' })
+        }, 3000)
+      </script>
+    </div>
+  </body>
+</html>
